@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Grid</title>
+    <script src="https://kit.fontawesome.com/5e144cf484.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            max-width: 800px;
+            margin:30px auto;
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+        }
+        .items{
+            border: 2px solid rgb(92, 6, 6);
+            border-radius: 10px;
+            padding: 10px;
+            width: 90%;
+        }
+        .items img{
+            width: 50%;
+        }
+        @media screen and (max-width: 576px) {
+            .gallery{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            
+        } 
+        @media screen and (min-width: 577px) and (max-width: 700px){
+            .gallery{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+        }
+            
+        
+    </style>
+<body>
+    <h1>Popular Collection</h1>
+    <!-- .gallery>.items*6>img+h3{Gadget}+p{$00}+p{<i class="fa-solid fa-star"></i>}+p{lorem3}+p{lorem5} -->
+    <div class="gallery">
+        <div class="items">
+            <img src="images/gadget-1.png" alt="">
+            <p>100</p>
+            <h3>Gadget</h3>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+            <p>lorem lorem lorem</p>
+            <p>lorem lorem lorem lorem lorem</p>
+        </div>
+        <div class="items">
+            <img src="images/gadget-2.webp" alt="">
+            <h3>Gadget</h3>
+            <p>200</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+            <p>lorem lorem lorem</p>
+            <p>lorem lorem lorem lorem lorem</p>
+        </div>
+        <div class="items">
+            <img src="images/gadget-3.webp" alt="">
+            <h3>Gadget</h3>
+            <p>300</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+            <p>lorem lorem lorem</p>
+            <p>lorem lorem lorem lorem lorem</p>
+        </div>
+        <div class="items">
+            <img src="images/gadget-4.webp" alt="">
+            <h3>Gadget</h3>
+            <p>400</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+            <p>lorem lorem lorem</p>
+            <p>lorem lorem lorem lorem lorem</p>
+        </div>
+        <div class="items">
+            <img src="images/gadget-5.webp" alt="">
+            <h3>Gadget</h3>
+            <p>500</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+            <p>lorem lorem lorem</p>
+            <p>lorem lorem lorem lorem lorem</p>
+        </div>
+        <div class="items">
+            <img src="images/gadget-6.webp" alt="">
+            <h3>Gadget</h3>
+            <p>600</p>
+            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+            <p>lorem lorem lorem</p>
+            <p>lorem lorem lorem lorem lorem</p>
+        </div>
+    </div>  
+
+
+</body>
+</html>
